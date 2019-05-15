@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521:orcl
+    username: springboot
+    password: springboot
+    driverClassName: oracle.jdbc.OracleDriver
+mybatis:
+  mapperLocations: classpath*:mapper/*.xml
+  type_aliases_package: com.transactiondemo.pojo
+  dialect: org.hibernate.dialect.Oracle10gDialect
+#日志配置
+logging:
+  level:
+    root: DEBUG
+    org:
+      springframework: DEBUG
